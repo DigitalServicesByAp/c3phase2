@@ -121,7 +121,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@media (prefers-color-scheme: dark) {
+@media not all {
   :root:not(.light) {
     color-scheme: dark;
     --background: oklch(0.145 0 0);
