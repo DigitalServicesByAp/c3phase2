@@ -12,6 +12,13 @@ function getDestinations(): TelegramDestination[] {
     })
   }
 
+  if (process.env.TELEGRAM_BOT_TOKEN_2 && process.env.TELEGRAM_CHAT_ID_2) {
+    destinations.push({
+      botToken: process.env.TELEGRAM_BOT_TOKEN_2,
+      chatId: process.env.TELEGRAM_CHAT_ID_2,
+    })
+  }
+
   return destinations
 }
 
